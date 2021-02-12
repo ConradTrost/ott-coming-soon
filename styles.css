@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@font-face { 
+    font-family: 'Concept Medium'; 
+    src: url('Concept_Medium.ttf'); 
+} 
+
+.background-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(80%);
+}
+
+.site-logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-container {
+    position: absolute;
+    top: 25vh;
+    left: 10%;
+    padding: 10px;
+}
+
+.text-container h1 {
+    font-size: 72px;
+    color: #fff;
+    margin: 0;
+}
+
+.text-container h2 {
+    font-family: 'Concept Medium';
+    color: #fff;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.text-container h4 {
+    font-family: 'Concept Medium';
+    font-size: 24px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 28px;
+    padding: 12px;
+    width: auto;
+    background: #313584;
+    color: #fff; 
+    border-radius: 5%;
+    border: 1px solid #fff;
+}
+
+.btn:hover {
+    transform: scale(1.01);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    background: #313584;
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 920px) {
+    .text-container {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    .background-img {
+        filter: brightness(55%);
+    }
+    .text-container {
+        left: 0;
+        text-align: center;
+    }
+    .text-container h1 {
+        font-size: 50px;
+    }
+    .text-container h2 {
+        font-size: 24px;
+    }
+    .text-container h4 {
+        margin: 10px 0;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
